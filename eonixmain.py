@@ -25,7 +25,7 @@ TOKENS = [
                                                                             "8286478935:AAEUTYar_1a68bB2HTPmqbv_nraPNicE4-E",
 ]                                                    
                                                                           
-OWNER_ID = 7768926293
+OWNER_ID = 8254284803
 SUDO_FILE = "EONIX"
 
 # Initialize SUDO_USERS with OWNER_ID
@@ -114,7 +114,7 @@ slide_targets = set()
 slidespam_targets = set()
 swipe_mode = {}
 apps, bots = [], []
-delay = 0.0000000000000001
+delay = 0.000000000000000000000001
 
 logging.basicConfig(level=logging.INFO)
 
@@ -125,7 +125,7 @@ def only_sudo(func):
     async def wrapper(update: Update, context: ContextTypes.DEFAULT_TYPE):
         uid = update.effective_user.id
         if uid not in SUDO_USERS:
-            return await update.message.reply_text("औकात बना बना बिहारी मादरचोद 👞🐕😹.")
+            return await update.message.reply_text("Isᴋɪ Mᴀᴀ Cʜᴏᴅɴᴀ Sᴛᴀʀᴛ Kᴀʀ Dɪʏᴀ✔️☢️.")
         return await func(update, context)
     return wrapper
 
